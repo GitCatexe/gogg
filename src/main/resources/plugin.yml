@@ -1,0 +1,18 @@
+name: Aufzug
+version: 1.0.0
+main: de.aufzug.AufzugPlugin
+api-version: '26.1'
+description: Aufzug mit 2x2-Kabine, Rufknoepfen, Schild-Bedienpanel und Tueren
+commands:
+  aufzug:
+    description: Aufzuege verwalten
+    usage: /aufzug help
+    aliases: [lift]
+    permission: aufzug.admin
+permissions:
+  aufzug.admin:
+    description: Aufzuege erstellen und verwalten
+    default: op
+  aufzug.use:
+    description: Aufzuege benutzen
+    default: true

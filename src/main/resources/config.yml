@@ -1,0 +1,28 @@
+# true  = flüssige Fahrt (Kabine aus Display-Entities, Spieler werden per Velocity mitgetragen)
+# false = Block-Modus (Kabine aus echten Blöcken, fährt in 1-Block-Schritten, ruckelt aber ist sehr robust)
+smooth: true
+
+# Smooth-Modus: Höchstgeschwindigkeit in Blöcken pro Tick (0.35 = 7 Blöcke/s) und Beschleunigung
+max-speed: 0.35
+acceleration: 0.02
+
+# Block-Modus: Ticks pro Block (20 Ticks = 1 Sekunde)
+block-mode-ticks-per-block: 2
+
+# Wie lange die Kabinentür an einer Etage offen bleibt (Sekunden)
+door-open-seconds: 6
+
+# Diese Blöcke in der Kabine zählen als Tür: Gitter/Scheiben verschwinden beim Öffnen,
+# echte Türen (IRON_DOOR) werden geöffnet. Alles andere bleibt Wand.
+door-materials:
+  - IRON_BARS
+  - IRON_DOOR
+
+# Anzahl Spalten auf dem Kabinenschild (5 Spalten x 4 Zeilen = 20 Etagen)
+sign-columns: 5
+
+# Nur Smooth-Modus: Text auf dem Schild während der Fahrt nach oben (+) / unten (-) verschieben (in Blöcken)
+text-offset-y: 0.0
+
+# Klingel-/Türgeräusche
+sounds: true
